@@ -1,0 +1,40 @@
+.yy-empty{
+    height: 100%;
+    min-height: 100px;
+    position: relative;
+    line-height: normal;
+    
+    .yy-empty-content{
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        margin-top: -50px;
+
+        .yy-empty-img{
+            width: 64px;
+            height: 64px;
+            margin: 0 auto;
+            background-size: contain;
+            background-position: 50%;
+            background-repeat: no-repeat;
+
+        }
+        // .yy-empty-img-data{
+        //     background-image: url(https://ec-u8c-daily.yyuap.com/static/img/tip_data.1c41e81.png);
+        //     background-size:cover;
+        // }
+
+        p{
+            margin-top: 8px;
+            color: #666;
+            font-size: 12px;
+            line-height: 20px;
+            white-space: nowrap;
+        }
+    }
+    .yy-empty-middle{
+        top: 50%;
+        margin-top: -50px;
+    }
+}
