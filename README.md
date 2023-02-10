@@ -53,7 +53,6 @@
 │   ├── assets                                      # 静态资源，参与打包编辑
 │   │   ├── images
 │   │   └── style
-│   │       ├── antd-theme.js                       # Antd的重置样式，在webpack/base.js里进行了覆盖
 │   │       ├── common.css                          # 全局样式
 │   │       └── reset.css                           # 重置样式
 │   ├── components                                  # 公共组件
