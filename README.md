@@ -12,10 +12,10 @@
         ```
 
 ## 本地开发环境
+-  快速使用（axios、mobx使用内部都有实例）
 1. npm i
 2. npm run dev
 3. 浏览器访问：localhost:5555
-
 ## 测试环境打包
 - npm run daily-build
 

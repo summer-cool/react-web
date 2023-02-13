@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import styles from './index.module.scss'
 import { observer, inject } from 'mobx-react'
+import { axiosTest } from '@models'
 
 Main.propTypes = {
     props: PropTypes.object,
@@ -13,14 +14,21 @@ Main.propTypes = {
  * @param {type}
  * @return {type}
  */
-function Main(){
+function Main(props){
     let cls = classnames({
         [styles.home]: true,
     })
     useEffect(() => {
-
+      const { indexStore, configStore } = props
+      console.log(indexStore,configStore,'这是store数据')
+      getData()
     }, [])
-
+    const getData = async()=>{
+      let { code = 200, data = {} } = await axiosTest({user:"1"})
+      if(code == 200){
+        //.....
+      }
+    }
     return (
         <div className={cls}>
             hello world
@@ -28,4 +36,4 @@ function Main(){
     )
 }
 
-export default inject('indexStore')(observer(Main))
+export default inject('indexStore','configStore')(observer(Main))
