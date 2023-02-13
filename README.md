@@ -32,9 +32,10 @@
 - @pages: './src/pages'
 - @assets: './src/assets'
 - @components: './src/components'
-##关于sass及less选用
+
+## 关于sass及less选用
 - 可根据自己业务需求选用（默认sass）
-- 如选用less: webpack/base.js  将 'sass-loader' 改为 'less-loader' 并卸载sass-loader及node-sass安装less、less-loader
+- 如选用less: 修改webpack/base.js  将 'sass-loader' 改为 'less-loader' 并卸载sass-loader及node-sass安装less、less-loader
 ## 获取当前环境
 - process.env.NODE_ENV
     - development:  本地开发环境
