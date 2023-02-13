@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix --ext .js --ext .jsx src",
-    "clean": "rm -rf ./dist ./node_modules && npm install ynpm-tool -g && ynpm i",
+    "clean": "rm -rf ./dist ./node_modules && ynpm i",
     "dev": "cross-env NODE_ENV=development node ./webpack/dev.js",
     "daily-build": "npm run clean && cross-env NODE_ENV=daily webpack --config webpack/test.js --progress --hide-modules",
     "pre-build": "npm run clean && cross-env NODE_ENV=pre webpack --progress -p --config ./webpack/pre.js",
@@ -19,7 +19,6 @@
     "not ie <= 11"
   ],
   "dependencies": {
-    "@tinper/next-ui": "^4.4.3",
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
     "i18next": "^19.6.2",

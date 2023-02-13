@@ -6,7 +6,6 @@ import stores from './store/index'
 //引入全局样式
 import '@assets/style/common'
 import '@assets/style/reset'
-import '@tinper/next-ui/dist/tinper-next.css'
 //引入入口文件
 import App from './App'
 //引入多语言

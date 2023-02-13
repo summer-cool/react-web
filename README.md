@@ -2,7 +2,7 @@
 - React: [文档](https://react.docschina.org/)
 - React-router-dom: [文档](http://react-guide.github.io/react-router-cn/docs/API.html)
 - Mobx: [文档](https://cn.mobx.js.org/)
-- TinperNext: [UI组件库]如何安装请看文档(https://yondesign.yonyou.com/website/#/detail/start)
+<!-- - TinperNext: [UI组件库]如何安装请看文档(https://yondesign.yonyou.com/website/#/detail/start) -->
 - eslint规则
     - eslit规则: https://eslint.bootcss.com/docs/rules/
     - vscode 修改tab为4个空格
@@ -12,7 +12,7 @@
         ```
 
 ## 本地开发环境
-1. ynpm i
+1. npm i
 2. npm run dev
 3. 浏览器访问：localhost:5555
 
@@ -32,7 +32,9 @@
 - @pages: './src/pages'
 - @assets: './src/assets'
 - @components: './src/components'
-
+##关于sass及less选用
+- 可根据自己业务需求选用（默认sass）
+- 如选用less: webpack/base.js  将 'sass-loader' 改为 'less-loader' 并卸载sass-loader及node-sass安装less、less-loader
 ## 获取当前环境
 - process.env.NODE_ENV
     - development:  本地开发环境

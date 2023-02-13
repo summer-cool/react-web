@@ -1,6 +1,5 @@
 import React from 'react'
 import Loadable from 'react-loadable'
-import { Spin } from '@tinper/next-ui'
 
 const routes = [
     {
@@ -10,7 +9,7 @@ const routes = [
         component: Loadable({
             loader: () => import('@pages/home'),
             loading(){
-                return <Spin fullScreen spinning={true}></Spin>
+                return <div>loading</div>  //自己替换选用ui框架loading
             }
         }),
     }
